@@ -18,7 +18,7 @@ Three continuous, beat-aligned MoisesDB passages each include a stereo sum of th
 - Modified Freq: **Real** (electronic, 19.06 seconds).
 - Modified Freq: **Sunspot** (rock, 22.57 seconds).
 
-A separate editing example changes only the voice azimuth, depth or gain in the first passage. Eight discrete edits and a voice-only preview are pre-rendered; they are not combined or generated live. Other objects and metadata are held fixed. Every version of a passage uses the same safety attenuation, without per-version loudness/tonal matching or switching crossfades.
+A separate editing example changes only the voice azimuth, depth or gain in the first passage. Nine edits are selectable: -90/-45/+45/+90 degrees, depth 0.1/0.5/0.9, and voice gain -6/-3 dB. The predicted direction is approximately 0 degrees, so its redundant center edit is hidden. Ten exported edits and a voice-only preview remain archived; they are not combined or generated live. Other objects and metadata are held fixed. Every version of a passage uses the same safety attenuation, without per-version loudness/tonal matching or switching crossfades.
 
 Music source: [MoisesDB](https://github.com/moises-ai/moises-db).
 
