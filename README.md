@@ -14,11 +14,13 @@ This repository contains the static paper demo, not the model implementation or 
 
 Three continuous, beat-aligned MoisesDB passages each include a stereo sum of the source stems and sixteen cached SceneUpmix layout/style variants. All audio is 44.1 kHz stereo PCM16. The variants use the same frozen checkpoint and binaural rendering chain. Playback selects pregenerated audio; it does not run the network in the browser.
 
-- Iain Kerr & Friends: **Dreaming 'Bout Being With You** (jazz, 18.48 seconds).
-- Modified Freq: **Real** (electronic, 19.06 seconds).
-- Modified Freq: **Sunspot** (rock, 22.57 seconds).
+- FNDEF: **Lifes Changes** (rap, 18.46 seconds; MoisesDB validation split).
+- FNDEF: **You're The One** (pop, 18.27 seconds; MoisesDB validation split).
+- Modified Freq: **Take You Away** (rock, 20.25 seconds; MoisesDB test split).
 
-A separate editing example changes only the voice azimuth, distance or gain in the first passage. Nine edits are selectable: -90/-45/+45/+90 degrees, normalized distance 0.1/0.5/0.9, and voice gain -6/-3 dB. The predicted direction is approximately 0 degrees, so its redundant center edit is hidden. Ten exported edits and a voice-only preview remain archived; they are not combined or generated live. Other objects and metadata are held fixed. Every version of a passage uses the same safety attenuation, without per-version loudness/tonal matching or switching crossfades.
+A separate editing example changes only the voice azimuth, distance or gain in the first passage. Nine edits are selectable: -90/-45/+45/+90 degrees, normalized distance 0.1/0.5/0.9, and voice gain -6/-3 dB. There is no redundant 0-degree edit; the predicted scene is the reset state. The nine edits and a voice-only preview are exported offline, not combined or generated live. Other objects and metadata are held fixed. Every version of a passage uses the same safety attenuation, without per-version loudness/tonal matching or switching crossfades.
+
+These replacement passages were curated for sustained vocal activity, richer active instrumentation and distinct dataset genre tags. The editing passage has vocal energy throughout the selected interval; the pop passage has six active role groups and nine active stems. These are signal-based curation checks, not proof of perceptual superiority. This demonstration is separate from the formal listening experiment.
 
 Music source: [MoisesDB](https://github.com/moises-ai/moises-db).
 
