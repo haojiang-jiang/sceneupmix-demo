@@ -4,15 +4,21 @@ Editable 3D Object-Based Scene Authoring for Music Upmixing.
 
 Public audio demo: https://haojiang-jiang.github.io/sceneupmix-demo/
 
-This repository contains the static paper demo, not the model implementation or the formal listening-study response database. Paper details remain explicit placeholders until finalized.
+**Hao Jiang, Edgar Choueiri**
+
+3D Audio and Applied Acoustics (3D3A) Laboratory, Princeton University, Princeton, NJ, USA.
+
+This repository contains the static paper demo, not the model implementation or the formal listening-study response database. Unconfirmed paper links, abstract, figure and citation remain explicit placeholders.
 
 ## Audio
 
-Three 8-second MoisesDB excerpts each include a stereo sum of the source stems and sixteen cached SceneUpmix layout/style variants. The variants use the same checkpoint and binaural rendering chain. Playback selects pregenerated audio; it does not run the network in the browser.
+Three continuous, beat-aligned MoisesDB passages each include a stereo sum of the source stems and sixteen cached SceneUpmix layout/style variants. All audio is 44.1 kHz stereo PCM16. The variants use the same frozen checkpoint and binaural rendering chain. Playback selects pregenerated audio; it does not run the network in the browser.
 
-- The Unfortunates: **Beserker** (rock).
-- Iain Kerr & Friends: **It Was Only Ever You** (blues).
-- Iain Kerr & Friends: **Dreaming 'Bout Being With You** (jazz).
+- Iain Kerr & Friends: **Dreaming 'Bout Being With You** (jazz, 18.48 seconds).
+- Modified Freq: **Real** (electronic, 19.06 seconds).
+- Modified Freq: **Sunspot** (rock, 22.57 seconds).
+
+A separate editing example changes only the voice azimuth, depth or gain in the first passage. Eight discrete edits and a voice-only preview are pre-rendered; they are not combined or generated live. Other objects and metadata are held fixed. Every version of a passage uses the same safety attenuation, without per-version loudness/tonal matching or switching crossfades.
 
 Music source: [MoisesDB](https://github.com/moises-ai/moises-db).
 
