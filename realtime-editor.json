@@ -1,0 +1,84 @@
+{
+  "sample_rate": 44100,
+  "duration": 18.45986394557823,
+  "track_id": "dbb07bdc-2706-4e67-8b59-43f98cf1608a",
+  "title": "Lifes Changes",
+  "base_metadata": {
+    "azimuth_deg": 0.021599687752313912,
+    "elevation_deg": 2.3093855381011963,
+    "depth": 0.052827998995780945,
+    "width_deg": 3.301493190228939,
+    "gain": 0.840012788772583,
+    "diffuseness": 0.07076893001794815
+  },
+  "shared_safety_gain": 0.7643205656527851,
+  "saf_commit": "18fd5aba46e20787b51f28f7197a68506c965c07",
+  "checkpoint_sha256": "c9b105bee5fbb747c419331cd7f8939fbe46fe9827bae8299a2c05a97f230226",
+  "hrtf_sha256": "e7035994f5fd754058424c061380ee92b1d5ed58fccef2887a4266916616acdf",
+  "other_objects": [
+    {
+      "role": "drums_percussion",
+      "azimuth": -0.013386944483499974,
+      "elevation": 0.09409904479980469,
+      "distance": 0.22666862607002258
+    },
+    {
+      "role": "bass",
+      "azimuth": 0.01911630271933973,
+      "elevation": -2.8080403804779053,
+      "distance": 0.1114310771226883
+    },
+    {
+      "role": "guitar_plucked",
+      "azimuth": -31.20242714881897,
+      "elevation": 0.019916296005249023,
+      "distance": 0.20691289007663727
+    },
+    {
+      "role": "piano_keys",
+      "azimuth": 31.238349974155426,
+      "elevation": -0.33570170402526855,
+      "distance": 0.20498572289943695
+    },
+    {
+      "role": "synth_fx_other",
+      "azimuth": -16.542513370513916,
+      "elevation": 1.8712913990020752,
+      "distance": 0.3004362881183624
+    }
+  ],
+  "schema_version": 2,
+  "frames": 814080,
+  "context": 11025,
+  "samples": 836130,
+  "voice": {
+    "url": "realtime/voice.f32",
+    "bytes": 6689040,
+    "sha256": "9a193625118818ada6b6542dc13933e00ce5da3e5bdb4b18969d72fd55e99827"
+  },
+  "bank": {
+    "url": "realtime/bank.f32",
+    "bytes": 919572,
+    "sha256": "55de9dceb8add4173a3d87f78b5cc1642bc09a517cac16eaa21d61b2e6fbbebe"
+  },
+  "wasm": {
+    "url": "realtime/renderer.wasm",
+    "bytes": 115121,
+    "sha256": "c623ffc0633d8de172eab40e732452404e567734fca3b76b154ee6f69abb5fa0"
+  },
+  "worklet": {
+    "url": "realtime/processor.js",
+    "bytes": 2683,
+    "sha256": "a9544c6ee419f018e8bda2ece62d11b63bbd874be381473117299464d694573e"
+  },
+  "accompaniment": {
+    "url": "audio/editor/accompaniment-818525102f0e.flac",
+    "sha256": "818525102f0e3fad9a9212dd6d4db40a45a6efa6de572b1dec5b01f650b8fb3b",
+    "bytes": 3086939
+  },
+  "protocol": "Real-time SAF afSTFT with KEMAR diffuse-EQ magnitude/ITD interpolation. Static voice M/S decoded to L/R; 18 direct/early/late routes. One fixed safety gain; no loudness matching. No live neural inference.",
+  "interpolation_grid_degrees": [
+    2,
+    5
+  ]
+}
